@@ -1,0 +1,1 @@
+RUN apt install clang cmake ffmpeg libasound2-dev
