@@ -1,6 +1,10 @@
 
 # Subtitle Generator
 
+<p align="center">
+  <img src="https://github.com/AspadaX/TextExplorer/blob/main/assets/textexplorer-ezgif.com-video-to-gif-converter.gif?raw=true" alt="TextExplorer GIF">
+</p>
+
 Upload your video and get subtitles. 
 
 ## Table of Contents

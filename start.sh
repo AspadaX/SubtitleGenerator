@@ -4,4 +4,4 @@
 ./core &
 
 # Start the Streamlit app
-streamlit run app.py
+streamlit run app.py --server.maxUploadSize 10240

@@ -32,6 +32,9 @@ COPY requirements.txt .
 # Copy the model file
 COPY ./models/x-ggml-model.zh.bin /app
 
+# Copy the streamlit configurations
+COPY ./.streamlit /app
+
 # Install the dependencies
 RUN pip install --no-cache-dir -r requirements.txt \
     -i https://pypi.tuna.tsinghua.edu.cn/simple
