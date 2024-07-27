@@ -45,6 +45,13 @@ if uploaded_file is not None:
             srt_file.write(srt_content)
         
         st.success("Subtitles generated successfully. Download below 字幕已生成，下方下载:")
-        st.download_button(label="Download Subtitles 下载字幕", data=srt_content, file_name="subtitles.srt", mime="text/srt")
+        st.download_button(
+            label="Download Subtitles 下载字幕", 
+            data=srt_content, 
+            file_name="subtitles.srt", 
+            mime="text/srt"
+        )
     else:
-        st.error("Failed to generate subtitles.")
+        st.error(
+            f"Failed to generate subtitles. due to: {response.content.decode()}. Error code: {response.status_code}"
+        )
